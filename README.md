@@ -1,3 +1,5 @@
+# ！！！Currently under development. Stay tuned for updates！！！
+
 # 🔌 RK Hardware Control Plugin for Flutter
 
 A Flutter plugin for controlling hardware-level features on **Rockchip RK series** boards (e.g. RK3288, RK3399, RK3568). This plugin enables system-level control directly from Flutter apps, perfect for embedded devices and digital signage solutions.
