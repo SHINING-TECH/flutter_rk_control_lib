@@ -1,7 +1,10 @@
 name: rk_control_lib
-description: "A new Flutter plugin project."
-version: 0.0.1
-homepage:
+description: "Rockchip control library"
+version: 1.0.0
+homepage: https://github.com/SHINING-TECH/flutter_rk_control_lib
+repository: https://github.com/SHINING-TECH/flutter_rk_control_lib
+issue_tracker: https://github.com/SHINING-TECH/flutter_rk_control_lib/issues
+documentation: https://github.com/SHINING-TECH/flutter_rk_control_lib/blob/main/README.md
 
 environment:
   sdk: ^3.6.2
