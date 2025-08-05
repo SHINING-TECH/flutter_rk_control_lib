@@ -6,6 +6,9 @@ import com.cn.kdzn_p2.manager.boardfeature.base.BoardFeatureManager
 import com.example.rk_control_lib.constant.BoardTypeConstant
 import com.example.rk_control_lib.constant.TagConstant
 import com.example.rk_control_lib.impl.smdt.BoardFeatureSmdt3568Impl
+import com.example.rk_control_lib.impl.smdt.BoardFeatureSmdtAiot3288FImpl
+import com.example.rk_control_lib.impl.smdt.BoardFeatureSmdtAiot8953Impl
+import com.example.rk_control_lib.impl.smdt.BoardFeatureSmdtImpl
 import com.example.rk_control_lib.impl.ys.BoardFeatureYs3568Impl
 import com.example.rk_control_lib.impl.ys.BoardFeatureYsImpl
 import com.example.rk_control_lib.listener.BoardControlListener
@@ -67,6 +70,23 @@ class BoardFeatureProxy : BoardFeatureManager() {
             BoardTypeConstant.BoardTypeSMDT.BOARD_TYPE_SMDT_3576E-> {
                 boardFeatureManager = BoardFeatureSmdt3568Impl(mContext, mBoardType, mBoardControlListener)
                 log(TagConstant.TAG_BOARD_FEATURE, "BoardFeatureSmdt3568Impl init")
+            }
+            BoardTypeConstant.BoardTypeSMDT.BOARD_TYPE_AIOT_3288SF -> {
+                boardFeatureManager = BoardFeatureSmdtAiot3288FImpl(mContext, mBoardType, mBoardControlListener)
+                log(TagConstant.TAG_BOARD_FEATURE, "BoardFeatureSmdtAiot3288FImpl init")
+            }
+            BoardTypeConstant.BoardTypeSMDT.BOARD_TYPE_SMDT_AIOT_8953 ->{
+                boardFeatureManager = BoardFeatureSmdtAiot8953Impl(mContext, mBoardType, mBoardControlListener)
+                log(TagConstant.TAG_BOARD_FEATURE, "BoardFeatureSmdtAiot8953Impl init")
+            }
+            //视美泰 3288
+            BoardTypeConstant.BOARD_TYPE_Smdt,
+            BoardTypeConstant.BoardTypeSMDT.BOARD_TYPE_3288XT,
+            BoardTypeConstant.BoardTypeSMDT.BOARD_TYPE_3280,
+            BoardTypeConstant.BoardTypeSMDT.BOARD_TYPE_SMDT_3288
+            -> {
+                boardFeatureManager = BoardFeatureSmdtImpl(mContext, mBoardType, mBoardControlListener)
+                log(TagConstant.TAG_BOARD_FEATURE, "BoardFeatureSmdtImpl init")
             }
             //亿晟3568_r
             BoardTypeConstant.BoardTypeYS.BOARD_TYPE_RK3568_R -> {

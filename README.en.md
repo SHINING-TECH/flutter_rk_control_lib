@@ -22,10 +22,10 @@ A Flutter plugin for controlling hardware-level functions of **Rockchip RK serie
 ## 🧩 Supported Devices
 | Manufacturer | Model | Notes |
 |--------------|-------|-------|
-| Shimeitai | RK3288 | |
-|             | RK3568 | |
-| Yisheng | RK3288 | |
-|             | RK3568 | |
+| ShiMeta      | RK3288 | |
+|              | RK3568 | |
+| YISHENG      | RK3288 | |
+|              | RK3568 | |
 
 ---
 
