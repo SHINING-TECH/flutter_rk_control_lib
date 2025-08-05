@@ -30,10 +30,11 @@ A Flutter plugin for controlling hardware-level functions of **Rockchip RK serie
 ---
 
 ## 📦 Installation
-Add dependency in `pubspec.yaml`:
+
 ```yaml
 dependencies:
-  rk_control_lib: ^1.0.0
+  rk_control_lib:
+    path: ../rk_control_lib
 ```
 
 ---

@@ -55,11 +55,12 @@ A Flutter plugin for controlling hardware-level functions of **Rockchip RK serie
 
 ## 📦 安装
 
-在`pubspec.yaml`中添加依赖：
+本地依赖：
 
 ```yaml
 dependencies:
-  rk_control_lib: ^1.0.0
+  rk_control_lib:
+    path: ../rk_control_lib
 ```
 
 ---
