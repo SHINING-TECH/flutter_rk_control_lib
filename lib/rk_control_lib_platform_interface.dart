@@ -26,4 +26,16 @@ abstract class RkControlLibPlatform extends PlatformInterface {
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
+
+  Future<void> showStatusBar(bool visible);
+
+  Future<void> reboot();
+
+  Future<void> shutdown();
+
+  Future<void> sleepScreen();
+
+  Future<void> wakeScreen();
+
+  Future<void> setSystemTime(String time);
 }
