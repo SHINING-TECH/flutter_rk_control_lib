@@ -1,4 +1,5 @@
 name: rk_control_lib
+publisher: shiningtech.info
 description: "Rockchip control library"
 version: 1.0.0
 homepage: https://github.com/SHINING-TECH/flutter_rk_control_lib
