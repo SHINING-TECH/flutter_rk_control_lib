@@ -38,4 +38,7 @@ abstract class RkControlLibPlatform extends PlatformInterface {
   Future<void> wakeScreen();
 
   Future<void> setSystemTime(String time);
+
+  Future<void> setPowerOffOn(String offTime, String onTime, bool enable);
+
 }

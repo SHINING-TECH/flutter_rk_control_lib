@@ -82,6 +82,15 @@ class RkControlLibPlugin: FlutterPlugin, MethodCallHandler {
             })
             result.success(null)
         }
+        "setPowerOffOn" -> {
+            val offTime = call.argument<String>("offTime") ?: ""
+            val onTime = call.argument<String>("onTime") ?: ""
+            val enable = call.argument<Boolean>("enable") ?: false
+            Log.d("RkControlLib", "setPowerOffOn called - offTime: \$offTime, onTime: \$onTime, enable: \$enable")
+            // 调用BoardFeatureProxy来设置定时开关机
+            BoardFeatureProxy.getInstance().setPowerOffOn(offTime, onTime, enable)
+            result.success(null)
+        }
         else -> {
             result.notImplemented()
         }

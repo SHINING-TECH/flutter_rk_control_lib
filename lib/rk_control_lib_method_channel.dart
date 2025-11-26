@@ -44,4 +44,13 @@ class MethodChannelRkControlLib extends RkControlLibPlatform {
   Future<void> setSystemTime(String time) async {
     await methodChannel.invokeMethod('setSystemTime', {'time': time});
   }
+
+  @override
+  Future<void> setPowerOffOn(String offTime, String onTime, bool enable) async {
+    await methodChannel.invokeMethod('setPowerOffOn', {
+      'offTime': offTime,
+      'onTime': onTime,
+      'enable': enable
+    });
+  }
 }

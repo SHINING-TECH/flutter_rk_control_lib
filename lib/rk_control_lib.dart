@@ -29,4 +29,8 @@ class RkControlLib {
   Future<void> setSystemTime(String time) {
     return RkControlLibPlatform.instance.setSystemTime(time);
   }
+
+  Future<void> setPowerOffOn(String offTime, String onTime, bool enable) {
+    return RkControlLibPlatform.instance.setPowerOffOn(offTime, onTime, enable);
+  }
 }
